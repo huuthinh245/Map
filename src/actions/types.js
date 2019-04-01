@@ -1,0 +1,21 @@
+
+
+// map
+export const GET_DATA = 'GET_DATA';
+export const GET_DATA_SUCCESS = 'GET_DATA_SUCCESS';
+export const GET_DATA_ERROR = 'GET_DATA_ERROR';
+export const CLEAR_DATA  = 'CLEAR_DATA';
+export const PICK_DATA = 'PICK_DATA';
+
+export  const SEARCH_KEYWORD = 'SEARCH_KEYWORD';
+
+//category
+export const GET_CATEGORY = 'GET_CATEGORY';
+export const GET_CATEGORY_SUCCESS  = 'GET_CATEGORY_SUCCESS';
+export const GET_CATEGORY_ERROR = 'GET_CATEGORY_ERROR';
+
+//type_category
+export const DATA_FROM_CATEGORY = 'DATA_FROM_CATEGORY';
+export const DATA_FROM_CATEGORY_SUCCESS = 'DATA_FROM_CATEGORY_SUCCESS';
+export const DATA_FROM_CATEGORY_ERROR = 'DATA_FROM_CATEGORY_ERROR';
+export const CLEAR_CATEGORY_DATA = 'CLEAR_CATEGORY_DATA';
