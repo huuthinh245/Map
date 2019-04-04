@@ -1,5 +1,8 @@
-import api from './ApiConstrant';
-
+import { callApi } from './ApiConstrant';
+const METHOD = {
+  GET: 'get',
+  POST: 'POST'
+}
 export const mapApi = ({ lat, lng, keyword, danhmucID }) => {
     // const config = {
     //     headers: { 'Content-Type': 'application/json' },
@@ -8,11 +11,10 @@ export const mapApi = ({ lat, lng, keyword, danhmucID }) => {
     if (danhmucID) {
       url = url + `&DanhMucId=${danhmucID}`;
     }
-    return api.get(url);
+
+    return callApi[METHOD.GET](url);
 }
 
 export const categoryApi = () => {
-  return api.get('Mobile_DanhMuc_KinhDoanh_Getall');
+  return callApi[METHOD.GET]('Mobile_DanhMuc_KinhDoanh_Getall');
 }
-
-

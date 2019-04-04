@@ -22,6 +22,7 @@ export default class App extends Component {
     stores.dispatch(getDataCategoryAction());
   }
   render() {
+    
     return (
       <Provider store={stores}>
         <Root />

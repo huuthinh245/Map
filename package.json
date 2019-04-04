@@ -14,7 +14,7 @@
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.11",
     "react": "16.8.3",
-    "react-native": "^0.59.2",
+    "react-native": "^0.59.3",
     "react-native-gesture-handler": "^1.1.0",
     "react-native-maps": "https://github.com/react-native-community/react-native-maps/archive/v0.24-rc1.tar.gz",
     "react-native-permissions": "2.0.0-alpha.1",
@@ -34,7 +34,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.5.0",
     "babel-preset-flow": "^6.23.0",
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-native": "^3.6.0",
@@ -44,6 +44,10 @@
     "prettier": "^1.16.4",
     "react-native-debugger-open": "^0.3.18",
     "react-test-renderer": "16.8.3",
+    "reactotron-apisauce": "^3.0.0",
+    "reactotron-react-native": "^3.2.1",
+    "reactotron-redux": "^3.1.0",
+    "reactotron-redux-saga": "^4.2.1",
     "redux-devtools-extension": "^2.13.8"
   },
   "jest": {

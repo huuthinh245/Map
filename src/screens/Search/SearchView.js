@@ -5,7 +5,8 @@ import {
   StyleSheet,
   Text,
   FlatList,
-  ActivityIndicator
+  ActivityIndicator,
+  InteractionManager
 } from 'react-native';
 import Ionicon from 'react-native-vector-icons/Ionicons';
 import Emitter from '../../lib';
@@ -18,6 +19,7 @@ class SearchView extends React.Component {
     super(props);
     this.listIcon = ['ios-cafe', 'ios-home', 'ios-card', 'logo-xbox', 'ios-settings', 'ios-medical', 'ios-restaurant', 'ios-boat'];
     this.state = {
+      renderLayout: false,
       data: [
         'Cafe', 'Street food', 'ATM', 'Hotel', 'Sport', 'Service', 'Education',
         'Shopping', 'Travel', 'Beauty & Spa'
