@@ -4,7 +4,8 @@ import {
   StyleSheet,
   View,
   Platform,
-  Linking
+  Linking,
+  Text
 } from 'react-native';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import type { NavigationScreenProp, NavigationStateRoute } from 'react-navigation';
@@ -15,6 +16,8 @@ import BottomSheet from './BottomSheet';
 import MapViewDirections from './MapViewDirections';
 import MapPanel from './MapPanel';
 import getLocation from '../../lib/location';
+import i18n from '../../locales';
+
 
 const types = ['standard', 'hybrid', 'satellite'];
 const initialRegion = {
@@ -154,6 +157,7 @@ class Map extends React.Component<Props, State> {
   };
 
   onChangeMapView = () => {
+    // this.props.setLocale();
     this.setState({ mapType: (this.state.mapType + 1) % types.length });
   };
 
@@ -207,6 +211,7 @@ class Map extends React.Component<Props, State> {
   }
 
   render() {
+
     return (
       <View style={{ flex: 1 }}>
         <MapView

@@ -59,6 +59,8 @@ pod 'RNPermissions', :path => '../node_modules/react-native-permissions', :subsp
   # 'StoreKit',
 ]
 
+  pod 'RNLocalize', :path => '../node_modules/react-native-localize'
+
 end
 
 post_install do |installer|

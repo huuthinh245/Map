@@ -1,6 +1,6 @@
 import { callApi } from './ApiConstrant';
 const METHOD = {
-  GET: 'get',
+  GET: 'GET',
   POST: 'POST'
 }
 export const mapApi = ({ lat, lng, keyword, danhmucID }) => {

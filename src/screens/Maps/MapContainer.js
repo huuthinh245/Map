@@ -17,13 +17,14 @@ const mapStateToProps = (state) => ({
  keyword: selectors.getKeyword(state),
  category: selectors.getCategory(state),
  list_data: selectors.getListDataCategory(state),
- categoryId: selectors.getCategoryId(state)
+ categoryId: selectors.getCategoryId(state),
 });
 
 const mapDispatchToProps = (dispatch) => ({
    fetchData: ({ lat, lng, keyword }) => dispatch(getDataMapAction({ lat, lng, keyword })),
    clearData: () => dispatch(clearDataAction()),
-   clearDataCategory: () => dispatch(clearDataCategoryAction())
+   clearDataCategory: () => dispatch(clearDataCategoryAction()),
+   setLocale: () => dispatch({ type: 'SET_LOCALE'})
    
 });
 

@@ -8,7 +8,6 @@ import * as RNPermissions from 'react-native-permissions';
 import Root from './src/navigation/Root';
 import stores from './src/stores';
 import { getDataCategoryAction } from './src/actions/categoryAction';
-
 export default class App extends Component {
   async componentDidMount() {
     await RNPermissions.request(
@@ -30,3 +29,4 @@ export default class App extends Component {
     );
   }
 }
+
