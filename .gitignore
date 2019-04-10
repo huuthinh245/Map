@@ -35,7 +35,7 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
-Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework/GoogleMapsCore
+ios/Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework/GoogleMapsCore
 
 # BUCK
 buck-out/
